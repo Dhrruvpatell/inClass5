@@ -1,0 +1,163 @@
+/* Dhruv Patel
+   Student Number: 8959436 */
+   .structural {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+header {
+    background-color: hsl(0, 80%, 80%);
+}
+
+main {
+    background-color: hsl(120, 80%, 80%);
+    float: left;
+    width: 65%;
+}
+
+aside {
+    background-color: hsl(240, 80%, 80%);
+    float: left;
+    width: 35%;
+    padding: auto;
+    height: 35%;
+}
+
+footer {
+    background-color: hsl(300, 80%, 80%);
+    clear: both;
+}
+
+#paragraph1 {
+    color: rgb(255, 0, 0); /* Red */
+}
+
+#paragraph2 {
+    color: rgb(0, 0, 255); /* Blue */
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+a:hover::after {
+    
+    color: #666;
+}
+h1 {
+    font-size: 2.5rem;
+    color: blue;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid indigo;
+    font-family: Arial, sans-serif;
+    color: indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: cornsilk;
+    background-color: indigo;
+}
+
+form {
+    border: 5px dashed #333; /* Border that is 5px in width, dashed, and color #333 */
+    padding: 5px;
+}
+
+/* Remove height for main and aside */
+main, aside {
+    height: 690px;
+}
+
+/* Attribute selectors for input types */
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+option {
+    width: 50%;
+    display: block;
+    height: 2em;
+}
+
+/* Attribute selectors for radio and checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    width: 2em;
+    height: 2em;
+}
+
+/* Styles for select, option, label, legend, input[type=submit] */
+select,
+option,
+label,
+legend,
+input[type="submit"] {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/* Textarea styles */
+textarea {
+    width: 50%;
+    display: block;
+}
+
+/* Fieldset styles */
+fieldset {
+    border: none;
+}
+
+footer {
+    /* No changes needed */
+}
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#gallery figure {
+    border: 1px solid #000; /* Added border */
+}
+
+#gallery img {
+    width: 80%;
+    height: 80%;
+}
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px; /* Reduced font size to 10px */
+    }
+
+    #gallery {
+        grid-template-columns: repeat(1, 1fr); /* Changed grid to 1 column */
+    }
+
+    body {
+        flex-direction: column-reverse; /* Flows aside under main */
+    }
+}
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}

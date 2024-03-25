@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav class="structural">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact</h2>
+        <form action="#" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autofocus>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <fieldset>
+                <legend>What section of PROG1245 are you in?</legend>
+                <div>
+                    <input type="radio" id="sec4" name="section" value="4" required>
+                    <label for="sec4">Section 4</label>
+                </div>
+                <div>
+                    <input type="radio" id="sec5" name="section" value="5">
+                    <label for="sec5">Section 5</label>
+                </div>
+                <div>
+                    <input type="radio" id="sec8" name="section" value="8">
+                    <label for="sec8">Section 8</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="help">What do you need help with?</label>
+                <select id="help" name="help" required>
+                    <option value="">Select an option</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="both">Both (HTML & CSS)</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="human" name="human" value="true" required>
+                <label for="human">I am a human</label>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <aside>
+        <h2>Links</h2>
+         <ul>
+          <li><a href="https://www.economist.com/science-and-technology" target="_blank">Science-and-technology</a></li>
+          <li><a href="https://scitechdaily.com/" target="_blank">ScienceTech</a></li>
+         </ul>
+  
+        </aside>
+      
+         <footer>
+          <p>&copy; 2024 Dhruv Patel</p>
+          </footer>
+      
+</body>
+</html>
